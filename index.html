@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHSRegent - IT Solutions & Services</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light Slate 50 */
+            color: #334155; /* Slate 700 */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0; /* Slate 200 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #64748b; /* Slate 500 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569; /* Slate 600 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header/Navigation Bar -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-2">
+                <!-- Placeholder for a simple logo/icon -->
+                <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h4l2-2m-6-2h2m0 0h2m0 0h2m0 0h2m-6 0v2m0 0h2m0 0h2m0 0h2m0 0h2m-6 0v2m0 0h2m0 0h2m0 0h2m0 0h2m-6 0v2m0 0h2m0 0h2m0 0h2m0 0h2m-6 0v2"></path>
+                </svg>
+                <span class="text-2xl font-bold text-gray-800">AHSRegent</span>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300 rounded-md p-2">Home</a></li>
+                <li><a href="#services" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300 rounded-md p-2">Services</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300 rounded-md p-2">About Us</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300 rounded-md p-2">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="md:hidden mt-4 hidden">
+            <ul class="flex flex-col space-y-2">
+                <li><a href="#home" class="block text-gray-600 hover:text-indigo-600 font-medium transition duration-300 rounded-md p-2">Home</a></li>
+                <li><a href="#services" class="block text-gray-600 hover:text-indigo-600 font-medium transition duration-300 rounded-md p-2">Services</a></li>
+                <li><a href="#about" class="block text-gray-600 hover:text-indigo-600 font-medium transition duration-300 rounded-md p-2">About Us</a></li>
+                <li><a href="#contact" class="block text-gray-600 hover:text-indigo-600 font-medium transition duration-300 rounded-md p-2">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-20 md:py-32 overflow-hidden rounded-b-lg">
+            <div class="container mx-auto px-6 md:px-10 text-center relative z-10">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up">
+                    Innovating Your Future with <span class="text-yellow-300">Smart IT Solutions</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto opacity-90 animate-fade-in-up delay-200">
+                    AHSRegent provides cutting-edge IT services and solutions to empower businesses and drive digital transformation.
+                </p>
+                <a href="#services" class="bg-white text-indigo-700 hover:bg-indigo-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 inline-block animate-fade-in-up delay-400">
+                    Explore Our Services
+                </a>
+            </div>
+            <!-- Background shapes for visual appeal -->
+            <div class="absolute inset-0 opacity-10">
+                <svg class="w-full h-full" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 160L48 144C96 128 192 96 288 112C384 128 480 192 576 202.7C672 213.3 768 170.7 864 160C960 149.3 1056 170.7 1152 170.7C1248 170.7 1344 149.3 1392 138.7L1440 128V0H0V160Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 md:py-24 bg-gray-50 rounded-lg shadow-inner mx-4 md:mx-auto my-8 max-w-6xl">
+            <div class="container mx-auto px-6 md:px-10">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Our Comprehensive IT Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1: Cloud Solutions -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-gray-200">
+                        <div class="text-indigo-600 mb-4">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Cloud Solutions</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Leverage the power of the cloud with our expert services, including migration, infrastructure management, and cloud-native development.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 2: Cybersecurity -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-gray-200">
+                        <div class="text-indigo-600 mb-4">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v3h8z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Cybersecurity</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Protect your valuable assets with robust cybersecurity strategies, threat detection, and incident response planning.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 3: Software Development -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-gray-200">
+                        <div class="text-indigo-600 mb-4">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Software Development</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Custom software solutions tailored to your unique business needs, from web and mobile apps to enterprise systems.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 4: IT Consulting -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-gray-200">
+                        <div class="text-indigo-600 mb-4">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.559 23.559 0 0112 15c-3.183 0-6.22-1.04-8.755-2.745M9 10a3 3 0 11-6 0 3 3 0 016 0zm12 0a3 3 0 11-6 0 3 3 0 016 0zm-9 0a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">IT Consulting</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Strategic guidance and expert advice to optimize your IT infrastructure, improve efficiency, and achieve business goals.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 5: Data Analytics -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-gray-200">
+                        <div class="text-indigo-600 mb-4">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M18 14v6m-3-3h6M5 10h.01M10 10h.01M15 10h.01M5 14h.01M10 14h.01M15 14h.01M5 18h.01M10 18h.01M15 18h.01"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Data Analytics</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Unlock insights from your data with our analytics services, helping you make informed decisions and drive growth.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 6: Managed IT Services -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-gray-200">
+                        <div class="text-indigo-600 mb-4">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Managed IT Services</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Proactive monitoring, maintenance, and support to ensure your IT systems run smoothly 24/7.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 md:py-24 bg-white rounded-lg shadow-inner mx-4 md:mx-auto my-8 max-w-6xl">
+            <div class="container mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/a78bfa/ffffff?text=About+Us" alt="About AHSRegent" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">About AHSRegent</h2>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        AHSRegent is a leading IT solutions and services provider dedicated to helping businesses thrive in the digital age. With a team of highly skilled professionals and a passion for innovation, we deliver tailored solutions that meet the unique challenges and goals of our clients.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Our commitment to excellence, customer satisfaction, and continuous improvement sets us apart. We believe in building long-term partnerships, offering reliable support, and staying ahead of technological trends to provide the best value.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        From small startups to large enterprises, we empower organizations to optimize their operations, enhance security, and unlock new opportunities through strategic IT implementation.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="py-16 md:py-20 bg-indigo-500 text-white text-center rounded-lg shadow-lg mx-4 md:mx-auto my-8 max-w-6xl">
+            <div class="container mx-auto px-6 md:px-10">
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-6">Ready to Transform Your Business?</h2>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
+                    Let's discuss how AHSRegent can provide the perfect IT solutions to drive your success.
+                </p>
+                <a href="#contact" class="bg-white text-indigo-700 hover:bg-indigo-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 inline-block">
+                    Get in Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="py-16 md:py-24 bg-gray-50 rounded-lg shadow-inner mx-4 md:mx-auto my-8 max-w-6xl">
+            <div class="container mx-auto px-6 md:px-10">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Contact Us</h2>
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/2 bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Send us a Message</h3>
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 text-sm font-medium mb-2">Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 transition duration-200" placeholder="Your Name" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 transition duration-200" placeholder="your.email@example.com" required>
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-gray-700 text-sm font-medium mb-2">Subject</label>
+                                <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 transition duration-200" placeholder="Subject of your inquiry" required>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 text-sm font-medium mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 transition duration-200" placeholder="Tell us about your needs..." required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:scale-105">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="md:w-1/2 bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Our Information</h3>
+                        <div class="space-y-6 text-gray-700">
+                            <div class="flex items-center space-x-4">
+                                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                <p>123 IT Solutions Ave, Tech City, TX 78901</p>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684L10.5 9.87a1 1 0 00.54 1.06l7.535 3.562a1 1 0 001.268-1.122l-.738-4.524a1 1 0 00-1.06-1.06L15.362 3.86a1 1 0 00-.684-.948H11a2 2 0 00-2 2v.727c0 .646-.226 1.265-.624 1.76L4.76 10.34a2 2 0 00-.76 1.76V19a2 2 0 002 2h2"></path></svg>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                <p>info@ahsregent.com</p>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <p>Mon - Fri: 9:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="text-xl font-semibold text-gray-900 mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-600 hover:text-indigo-600 transition duration-300">
+                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                                </a>
+                                <a href="#" class="text-gray-600 hover:text-indigo-600 transition duration-300">
+                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.497 1.127a6.37 6.37 0 00-4.062 1.267A6.37 6.37 0 001.127 12.497a6.37 6.37 0 001.267 4.062 6.37 6.37 0 009.103 0 6.37 6.37 0 001.267-4.062 6.37 6.37 0 00-1.267-4.062L12 2.373zM12 22a10 10 0 100-20 10 10 0 000 20zM12 6a6 6 0 100 12 6 6 0 000-12z" clip-rule="evenodd" /></svg>
+                                </a>
+                                <a href="#" class="text-gray-600 hover:text-indigo-600 transition duration-300">
+                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M.05 15.96a.5.5 0 01-.05-.05V8.09a.5.5 0 01.05-.05h23.9a.5.5 0 01.05.05v7.82a.5.5 0 01-.05.05H.05zM9.54 12.07l-3.32 2.15a.5.5 0 01-.76-.41V9.79a.5.5 0 01.76-.41l3.32 2.15a.5.5 0 010 .54zM14.46 12.07l3.32 2.15a.5.5 0 00.76-.41V9.79a.5.5 0 00-.76-.41l-3.32 2.15a.5.5 0 000 .54z" /></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-12 rounded-t-lg">
+        <div class="container mx-auto px-6 md:px-10 text-center">
+            <p>&copy; 2025 AHSRegent. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu after clicking a link
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Mobile menu toggle functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Simple animation for hero section elements on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroTitle = document.querySelector('.animate-fade-in-up');
+            const heroText = document.querySelector('.animate-fade-in-up.delay-200');
+            const heroButton = document.querySelector('.animate-fade-in-up.delay-400');
+
+            // Remove hidden/opacity classes if they were used for initial state
+            heroTitle.style.opacity = '1';
+            heroTitle.style.transform = 'translateY(0)';
+            heroText.style.opacity = '1';
+            heroText.style.transform = 'translateY(0)';
+            heroButton.style.opacity = '1';
+            heroButton.style.transform = 'translateY(0)';
+        });
+    </script>
+</body>
+</html>
